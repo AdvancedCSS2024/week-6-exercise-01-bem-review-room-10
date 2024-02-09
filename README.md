@@ -24,12 +24,12 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 9. Repeat steps 4-8.
 10. **Do not delete the Feedback branch.**
 
-## Example 1
-    <header class="card card__header">
-        <h2 class="card card__h2">Cars</h2>
-        <h3 class="card card__h3">Fiat</h3>
-        <h3 class="card card__h3">Opel</h3>
-        <h3 class="card card__h3">Volvo</h3>
+## Example 1 (improved)
+    <header class="card__header">
+        <h2 class="card__header--title">Cars</h2>
+        <h3 class="card__header--subtitle">Fiat</h3>
+        <h3 class="card__header--subtitle">Opel</h3>
+        <h3 class="card__header--subtitle">Volvo</h3>
     </header>
 
 #### Solution 1:
@@ -61,8 +61,8 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         background-color: yellow;
     }
 
-## Example 3
-    .Newcard {
+## Example 3 (improved)
+    .card--new {
       border: solid 1px rgb(255, 242, 0);
       border-width: 2rem;
       max-width: 260px;
@@ -81,10 +81,10 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 > [!TIP]
 > There are more mistakes to fix here :)
 
-    <section class="card">
-        <article class="card article__dog">
-            <aside class="article__dog aside">
-                <figure class="article__dog figure">
+    <section class="card__section">
+        <article class="card__article--dog">
+            <aside class="article__dog--aside">
+                <figure class="article__dog--figure">
                     <img src="..." alt="Dummy Image" class="" />
                 </figure>
              </aside>
@@ -97,7 +97,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 7
-    <article class="card cat--card">
+    <article class="card--cat">
       ...
     </article>
 
@@ -113,7 +113,7 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
         padding: 20px;
     }
   
-    .card {
+    .card__other {
         background-color: white;
         margin-bottom: 20px;
         padding: 15px;
@@ -136,11 +136,11 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     }
 
 ## Example 11
-    <main class="main__flex-wrap">
+    <main class="main__home">
         ...
     </main>
 > [!TIP]
-> Why is it not a good idea to specify type of flex applied to element in the name of class?
+> Why is it not a good idea to specify type of flex applied to element in the name of class? A: Becuase it doesn't specify what it does
 
     
 ## Example 12
@@ -149,8 +149,8 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
     </section>
 
 ## Example 13
-    <footer class="card__options">
-      <div class="card__options-buttons">
+    <footer class="card__footer">
+      <div class="card__footer--buttons">
        ...
       </div>
     </footer>
@@ -163,8 +163,8 @@ In addition to the above BEM exercise, in your group, practice Git collaboration
 
 ## Example 15
     <header class="card__header">
-        <h2 class="card__title--cat">NEW! Cat Poster</h2>
-        <h3 class="card__subtitle">Cat poster - 50nok</h3>
+        <h2 class="card__header--title">NEW! Cat Poster</h2>
+        <h3 class="card__header--subtitle">Cat poster - 50nok</h3>
     </header>
 
 ## Example 16
